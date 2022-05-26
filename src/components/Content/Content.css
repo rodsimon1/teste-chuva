@@ -1,0 +1,173 @@
+/*   ------------------      TITLE SECTION     ------------------    */
+
+.content {
+  /* margin: 10px; */
+  padding: 2rem;
+  margin-left: 220px;
+  /* border: 1px solid red; */
+  /* position: relative; */
+}
+
+.content__title {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.content__title-title {
+  /* border: 1px solid green; */
+
+  height: 54px;
+  width: 70%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.05em;
+
+  color: #ed7839;
+}
+
+.content__title-icons {
+  /* border: 1px solid blue; */
+  margin-top: 0.5rem;
+}
+
+/* .content__title-icons-buttons {
+  display: flex;
+} */
+
+.content__title-icons-buttons .big,
+.content__title-icons-buttons .small {
+  width: 7rem;
+  height: 40px;
+  margin: 0 5px;
+  color: #ffffff;
+  background: #ed7839;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.content__title-icons-buttons .small {
+  width: 3.5rem;
+}
+
+.content__title-icons-citation {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 179%;
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+
+.content__title-icons-citation a {
+  color: #ed7839;
+  text-decoration: none;
+}
+
+/*       ------------------     VIDEO SECTION     ------------------ */
+.content__video {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content__video-video {
+  position: relative;
+}
+
+.content__video-video-overlayTop {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 25px;
+
+  /* or 104% */
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 5px #1a1a1a;
+
+  color: #ffffff;
+}
+
+.content__video-video-overlayBottom {
+  position: absolute;
+  bottom: 4rem;
+  left: 1rem;
+  display: flex;
+}
+
+.content__video-video-overlayBottom img {
+  padding: 0.1rem;
+  border: 1px solid #ed7839;
+  border-radius: 50%;
+}
+
+.content__video-video-overlayBottom-name h3,
+.content__video-video-overlayBottom-name p {
+  /* margin-left: 1rem; */
+  margin: 1rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #1a1a1a;
+}
+.content__video-video-overlayBottom-name p {
+  font-size: 20px;
+}
+
+.content__video-details {
+  border: 1px solid #ececec;
+  border-radius: 3px 3px 0px 0px;
+
+  width: 20rem;
+  height: 25rem;
+
+  overflow-y: scroll;
+}
+
+.content__video-details-header {
+  background-color: #fdf1eb;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;
+  /* height: 2rem; */
+  padding: 1rem;
+  border-bottom: 1px solid #ececec;
+  border-radius: 3px 3px 0px 0px;
+
+  color: #4e4e4e;
+}
+
+.content__video-details-details {
+  padding: 1rem;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+/*   ------------------      SUMMARY SECTION     ------------------    */
