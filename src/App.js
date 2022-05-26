@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Content from './components/Content/Content';
+import Header from './components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* main body  */}
+      <Sidebar />
+
+      {/* header  */}
+      {/* title, idioma, avatar e login */}
+      <Header />
+
+      <Content />
+      {/* div video  */}
+      {/* titulo  */}
+      {/* download, etc  */}
+      {/* video  */}
+      {/* detalhes do video  */}
+
+      {/* resumo (expansível)  */}
+
+      {/* discussões  */}
+      {/* criar novo tópico abre caixa de texto com assunto e conteúdo  */}
+      {/* tópico enviado retorna  mensagem de sucesso  */}
+
+      {/* tópicos  */}
+      {/* card de tópicos expansíveis  */}
+
+      {/* footer  */}
     </div>
   );
 }
