@@ -49,5 +49,152 @@
 
 .discussion__body-icons {
   display: flex;
-  align-content: center;
+  justify-content: center;
+}
+.discussion__body-icons img {
+  margin: 2rem;
+}
+
+.discussion__body-subtitle {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  margin: auto;
+  width: 70%;
+
+  color: #595959;
+}
+
+.discussion__body-button {
+  /* border: 1px dotted red; */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.plus {
+  font-size: 30px;
+  margin-right: 0.5rem;
+}
+
+.discussion__body-button-divider {
+  border-bottom: 1px solid #e7e7e7;
+  width: 90%;
+  position: absolute;
+  bottom: 1rem;
+  z-index: -1;
+}
+
+.discussion__body-button button {
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  cursor: pointer;
+
+  /* identical to box height, or 107% */
+  text-align: center;
+
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/*    --------------------------   INPUT SECTION   --------------------------   */
+
+.discussion__body-inputs {
+  margin-top: 1rem;
+}
+.discussion__body-inputs p {
+  text-align: center;
+}
+
+.discussion__body-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.discussion__body-form label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ed7839;
+  margin-top: 1rem;
+}
+
+.discussion__body-form input,
+textarea {
+  margin-top: 0.5rem;
+  resize: none;
+}
+
+input[type='submit'] {
+  color: #ffffff;
+  background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+  border-radius: 0px 0px 4px 0px;
+  padding: 0.5rem;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: -2rem;
+}
+
+.discussions__body-formSent {
+  margin: 1rem 0;
+}
+
+.discussions__body-formSent-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 1rem 0;
+
+  color: #ed7839;
+}
+
+.discussions__body-formSent-subtitle {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin: 2rem 0;
+
+  color: #595959;
+}
+.discussions__body-formSent-link,
+.discussions__body-formSent-link a:visited {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 137.5%;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #f48f44;
+}
+
+.discussions__body-formSent-link a:hover {
+  color: #dddddd;
 }

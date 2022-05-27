@@ -1,0 +1,104 @@
+.discussion__body-topic {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-top: 3rem;
+  padding: 1rem;
+
+  position: relative;
+}
+
+.discussion__body-topic-title {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ed7839;
+}
+
+.discussion__body-topic-poster {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  margin-top: 0.3rem;
+  color: #5c5c5c;
+}
+
+.discussion__body-topic-text {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  padding: 1rem 0;
+  color: #4d4d4d;
+}
+
+.discussion__body-topic-cardFooter {
+  display: flex;
+  justify-content: flex-start;
+}
+.cardFooterItem {
+  margin: 0 1rem;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.discussion__body-newTopic {
+  background: #dddddd;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.discussion__body-newTopic img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.discussion__body-newTopic a {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* identical to box height */
+  text-decoration-line: underline;
+
+  color: #ed7839;
+}
+
+.discussion__body-newTopic-feedback {
+  /* opacity: 1; */
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  margin: 1rem 0;
+  color: #707070;
+}
+
+.blur {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+}
