@@ -9,7 +9,6 @@ const Discussions = () => {
 
   const handleInput = (e) => {
     e.preventDefault();
-    // alert('Aqui enviaria a form pro backend');
     console.log('enviado');
     setIsInputmode(false);
     setIsFormSent(true);

@@ -1,3 +1,12 @@
 .footer {
   margin-left: 240px;
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-left: 0;
+  }
+  .footer img {
+    width: 27rem;
+  }
+}

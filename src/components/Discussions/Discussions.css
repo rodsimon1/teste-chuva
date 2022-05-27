@@ -1,6 +1,5 @@
 .discussion {
   padding: 2rem;
-  /* border: 1px solid red; */
 }
 
 .discussion__header {
@@ -70,7 +69,6 @@
 }
 
 .discussion__body-button {
-  /* border: 1px dotted red; */
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -103,7 +101,6 @@
   line-height: 16px;
   cursor: pointer;
 
-  /* identical to box height, or 107% */
   text-align: center;
 
   padding: 0.5rem 1rem;

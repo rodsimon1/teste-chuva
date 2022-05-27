@@ -79,21 +79,17 @@
   font-size: 14px;
   line-height: 19px;
 
-  /* identical to box height */
   text-decoration-line: underline;
 
   color: #ed7839;
 }
 
 .discussion__body-newTopic-feedback {
-  /* opacity: 1; */
-
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
   margin: 1rem 0;
   color: #707070;
 }
