@@ -1,0 +1,53 @@
+.discussion {
+  padding: 2rem;
+  /* border: 1px solid red; */
+}
+
+.discussion__header {
+  padding: 1rem;
+  box-sizing: border-box;
+  background: #fdf1eb;
+  border-bottom: 1px solid #ececec;
+  border-radius: 3px 3px 0px 0px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+
+  display: flex;
+  align-items: center;
+
+  color: #4e4e4e;
+}
+
+.discussion__body {
+  padding: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 3px 3px 0px 0px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+
+  color: #5c5c5c;
+}
+
+.discussion__body-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ed7839;
+}
+
+.discussion__body-icons {
+  display: flex;
+  align-content: center;
+}

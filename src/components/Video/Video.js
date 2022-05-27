@@ -39,7 +39,7 @@ const Video = () => {
 
       <div className="content__video-details">
         <div className="content__video-details-header">Detalhes</div>
-        <div className="content__video-details-details">
+        <div className="content__video-details-body">
           {/* prettier-ignore */}
           <p>Tipo de Apresentação: <strong>{presentation.type}</strong></p>
           <p>

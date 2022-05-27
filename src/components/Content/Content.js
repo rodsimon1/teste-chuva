@@ -1,3 +1,5 @@
+import Discussions from '../Discussions/Discussions';
+import Summary from '../Summary/Summary';
 import Video from '../Video/Video';
 import './Content.css';
 
@@ -30,6 +32,8 @@ const Content = () => {
       </div>
 
       <Video />
+      <Summary />
+      <Discussions />
     </div>
   );
 };

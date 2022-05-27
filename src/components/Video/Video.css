@@ -76,7 +76,6 @@
   /* identical to box height, or 125% */
   display: flex;
   align-items: center;
-  /* height: 2rem; */
   padding: 1rem;
   border-bottom: 1px solid #ececec;
   border-radius: 3px 3px 0px 0px;
@@ -84,7 +83,8 @@
   color: #4e4e4e;
 }
 
-.content__video-details-details {
+.content__video-details-body {
+  margin-top: 3rem;
   padding: 1rem;
 
   font-family: 'Quicksand';
