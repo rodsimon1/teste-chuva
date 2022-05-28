@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 import TopicCards from '../TopicCards/TopicCards';
 import './Discussions.css';
 
@@ -6,6 +9,8 @@ const Discussions = () => {
   const [isInitialMode, setIsInitialMode] = useState(true);
   const [isInputmode, setIsInputmode] = useState(false);
   const [isFormSent, setIsFormSent] = useState(false);
+
+  const [text, setText] = useState('');
 
   const handleInput = (e) => {
     e.preventDefault();
@@ -62,7 +67,22 @@ const Discussions = () => {
                     placeholder="Defina um tópico sucinto para notificar os autores..."
                   />{' '}
                   <label htmlFor="conteudo">Conteúdo</label>
-                  <textarea name="conteudo" id="conteudo" cols="30" rows="10"></textarea>
+                  <CKEditor
+                    name="conteudo"
+                    id="conteudo"
+                    config={{
+                      // removePlugins: ['Heading'],
+                      toolbar: ['bold', 'italic', 'bulletedList', 'numberedList', 'link'],
+                    }}
+                    editor={ClassicEditor}
+                    data={text}
+                    onChange={(event, editor) => {
+                      const data = editor.getData();
+                      // console.log({ event, editor, data });
+                      setText(data);
+                    }}
+                  />
+                  {/* <textarea name="conteudo" id="conteudo" cols="30" rows="10"></textarea> */}
                   <input type="submit" value="Enviar" onClick={(e) => handleInput(e)} />
                 </div>
               </form>
