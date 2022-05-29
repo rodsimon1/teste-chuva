@@ -53,6 +53,10 @@
   font-size: 20px;
 }
 
+.video-overlay-none {
+  display: none;
+}
+
 .content__video-details {
   border: 1px solid #ececec;
   border-radius: 3px 3px 0px 0px;
@@ -81,7 +85,7 @@
 }
 
 .content__video-details-body {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 1rem;
 
   font-family: 'Quicksand';
