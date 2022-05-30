@@ -30,7 +30,7 @@ const TopicCards = ({ newTopic }) => {
           {topic.likes} {topic.likes === 1 ? 'like' : 'likes'}
         </p>
         <p className="cardFooterItem">
-          {topic.answers} {topic.answers === 1 ? 'reposta' : 'repostas'}
+          {topic.answers} {topic.answers === 1 ? 'resposta' : 'respostas'}
         </p>
       </div>
     </div>

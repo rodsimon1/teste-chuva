@@ -13,8 +13,6 @@ function App() {
       <Content />
 
       <Footer />
-
-      {/* footer  */}
     </div>
   );
 }

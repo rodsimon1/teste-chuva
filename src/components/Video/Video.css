@@ -7,6 +7,24 @@
   position: relative;
 }
 
+.content__video-video-videoContainer {
+  width: 650px;
+  height: 360px;
+  position: relative;
+}
+.content__video-video-videoControl {
+  width: 650px;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlays-container-none {
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
 .content__video-video-overlayTop {
   position: absolute;
   top: 0.5rem;
@@ -103,10 +121,13 @@
     align-items: center;
     margin-top: 4rem;
   }
+  .content__video-video-videoContainer,
+  .content__video-video-videoControl,
   video {
     width: 350px;
     height: 200px;
   }
+
   .content__video-details {
     margin-top: 1rem;
     width: 80%;
