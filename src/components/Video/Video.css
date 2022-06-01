@@ -71,10 +71,6 @@
   font-size: 20px;
 }
 
-.video-overlay-none {
-  display: none;
-}
-
 .content__video-details {
   border: 1px solid #ececec;
   border-radius: 3px 3px 0px 0px;

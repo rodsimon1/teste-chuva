@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import './Video.css';
 
 const Video = () => {
@@ -14,36 +14,18 @@ const Video = () => {
       '⁴Universidade Federal do Rio de Janeiro',
     ],
   });
-  const [playVideo, setPlayVideo] = useState(false);
-
-  const vidRef = useRef();
-
-  const handleVideo = () => {
-    console.log(vidRef.current.paused);
-    // console.log('click');
-
-    setPlayVideo((prevPlayVideo) => !prevPlayVideo);
-
-    if (playVideo) {
-      vidRef.current.pause();
-    } else {
-      vidRef.current.play();
-    }
-  };
-
-  const overlaysContainerClass = vidRef.current.paused ? '' : 'overlays-container-none';
 
   return (
     <div className="content__video">
       <div className="content__video-video">
         <div className="content__video-video-videoContainer">
-          <span className="content__video-video-videoControl" onClick={handleVideo}></span>
-          <video src="./Videos/video1.mp4" type="video/mp4" ref={vidRef} width="650" height="400" controls>
+          <span className="content__video-video-videoControl"></span>
+          <video src="./Videos/video1.mp4" type="video/mp4" width="650" height="400" controls>
             Your browser does not support HTML video
           </video>
         </div>
 
-        <div className={overlaysContainerClass}>
+        <div>
           <p className="content__video-video-overlayTop">
             Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de
             Campinas/SP{' '}
@@ -73,17 +55,17 @@ const Video = () => {
           <p>
             <strong>Autores: </strong>
           </p>
-          <p>
+          <div>
             {presentation.authors.map((author) => (
-              <div> {author}</div>
+              <p style={{ margin: '0' }}> {author}</p>
             ))}
-          </p>
+          </div>
           <br />
-          <p style={{ color: '#9c9c9c' }}>
+          <div style={{ color: '#9c9c9c', margin: '0', padding: 0 }}>
             {presentation.university.map((uni) => (
-              <div>{uni}</div>
+              <p style={{ margin: '0' }}>{uni}</p>
             ))}
-          </p>
+          </div>
         </div>
       </div>
     </div>

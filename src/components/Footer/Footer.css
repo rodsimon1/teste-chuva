@@ -1,6 +1,6 @@
 .footer {
-  margin-left: 240px;
   text-align: center;
+  margin-left: 240px;
 }
 
 @media screen and (max-width: 600px) {
